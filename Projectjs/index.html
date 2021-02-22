@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	 <link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<!--  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email); -->
+
+  <!--   const isPasswordSecure = (password) => {
+    const re = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
+    return re.test(password);
+}; -->
+ <div class="main">
+
+        <form id="signup" class="form">
+            <h1>Qeydiyyat formu</h1>
+            <div class="form-details">
+                <label for="username">İstifadəçi adı:</label>
+                <input type="text" name="username" id="username">
+                <small></small>
+            </div>
+
+            <!--start modal-->
+    <i class="fa fa-info blue" data-modal-target="#modal"></i>
+		<div class="modal" id="modal">
+    		<div class="modal-header">
+    		  <div class="title">Modal nümunəsi</div>
+    			  <button data-close-target class="close-button">&times;</button>
+    		</div>
+		   		 <div class="modal-body">
+		     	<p> Qeydiyyatdan keçərkən məlumatlarınızı düzgün daxil etmənizi xahiş edirik</p>
+		   		 </div>
+ 		 </div>
+ 	<div id="overlay"></div>
+ 		 	<!--end modal-->
+
+            <div class="form-details">
+                <label for="Email">E-poçta:</label>
+                <input type="text" name="email" id="email">
+                <small></small>
+            </div>
+
+            <div class="form-details">
+                <label for="password">Şifrə:</label>
+                <input type="password" name="password" id="password">
+                  <i class="far fa-eye first" id="togglePassword"></i>
+                <small></small>
+            </div>
+
+
+            <div class="form-details">
+                <label for="username">Şifrənin təkrarı:</label>
+                <input type="password" name="confirm-password" id="confirm-password">
+                  <i class="far fa-eye second" id="togglePassword2"></i>
+                <small></small>
+            </div>
+
+            <div class="form-details">
+                <input type="submit" value="Qeydiyyat ol">
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>  
+</body>
+</html>
